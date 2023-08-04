@@ -54,6 +54,12 @@ x(x>N)=N;
 r = x;
 end
 
+function r = guard(x, N)
+x(x<1)=1;
+x(x>N)=N;
+r = x;
+end
+
 function [xx, yy] = transform(x, y, ang, s0, s1)
 % x,y position
 % ang angle
